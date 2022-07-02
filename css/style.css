@@ -220,12 +220,12 @@ p, button, h3{
     border-radius: 10px;
   }
   /* CONTACTO*/
-.container-contacto {
+.form__container {
     padding-top: 20px;
     padding-bottom: 50px;
     color: rgb(255, 255, 255);
   }
-  .titulo-contacto {
+  .form__titulo {
     text-align: center;
     font-size: 40px;
   }
@@ -254,6 +254,12 @@ p, button, h3{
   }
  footer .container .row li{
   list-style: none;
+ } 
+
+ @media (max-width: 600px) {
+   form{
+    width: 100%;
+   }
  } 
 
  
