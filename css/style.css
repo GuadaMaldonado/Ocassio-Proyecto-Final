@@ -86,7 +86,7 @@ p, button, h3{
 }
 
 /* Sección Ofrecemos */
-.box {
+.ofrecemos__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,10 +94,10 @@ p, button, h3{
   flex-wrap: wrap;
   padding-bottom: 20px;
 }
-.item{
+.ofrecemos__item{
   box-shadow: 5px 5px 5px #777;
 }
-.item {
+.ofrecemos__item {
   height: 310px;
   width: 335px;
   padding: 50px 35px 10px;
@@ -125,7 +125,7 @@ p, button, h3{
     color:  #083b42;
     padding: 50px;
   }
-  .título-integrantes {
+  .integrantes__titulo{
     display: flex;
     justify-content: center;
     font-size: 30px; 
@@ -134,14 +134,14 @@ p, button, h3{
   .integrantes h3{
     font-family: 'Cinzel', serif;
   }
-  .box-equipo {
+  .integrantes__box {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
    grid-auto-rows: minmax(200px,auto);
    gap: 25px;
    justify-items: center;
   }
-  .persona img {
+  .integrantes__persona img {
     width: 330px;
     height: 280px;
     object-fit: cover;
@@ -172,7 +172,7 @@ p, button, h3{
   font-size: 40px;
 }
 /* SECCION PROYECTOS */
-.foto-estructuras {
+.estructuras__foto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,15 +190,15 @@ p, button, h3{
     background-size: cover;
     background-position: center center;
   }
-  .foto-estructuras h1 {
+  .estructuras__foto h1 {
     color: white;
     font-size: 40px;
   }
-  .proyectos{
+  .estructuras__proyectos{
    padding-left: 55px;
    padding-bottom: 50px;
   }
-  .titulo-proyectos {
+  .estructuras__titulo {
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -206,14 +206,14 @@ p, button, h3{
     padding-bottom: 10px;
   }
   /* GRID DE SECCIÓN PROYECTOS*/
-  .box-proyectos{
+  .estructuras__box{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, auto));
     grid-auto-rows: minmax(200px,auto);
     gap: 30px;
     justify-items: center;
   }
-  .box-proyectos img {
+  .estructuras__box img {
     width: 400px;
     height: 350px;
     object-fit: cover;
