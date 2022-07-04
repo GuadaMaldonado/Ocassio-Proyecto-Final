@@ -1,9 +1,36 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+.btn-light {
+  color: black;
+  background-color: #f7fafa;
+  border-color: #f7fafa;
+  transition-duration: 0.5s;
+  transition: 1s ease-in-out; }
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0; }
+
+h1, h2, .btn {
+  font-family: "Cinzel", serif; }
+
+p, button, h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1em; }
+
+.btn {
+  border-radius: 30px; }
+
+.btn-light {
+  font-family: "Cinzel", serif;
+  background-color: linear-gradient(to top, #f7fafa, #bccfd5); }
+  .btn-light:hover {
+    color: white;
+    background-color: #1d5152;
+    border-color: #1d5152;
+    box-shadow: 5px 5px 5px #777;
+    transform: scale(1.1); }
 
 header .navbar .container a {
   font-size: 0.9em;
@@ -60,6 +87,127 @@ body {
     left: 50px;
     right: 50px;
     text-align: center; }
+
+main .mision {
+  padding-top: 80px;
+  padding-bottom: 50px; }
+  main .mision .container .card {
+    border-radius: 30px;
+    height: 260px;
+    box-shadow: 5px 5px 5px #777;
+    margin-bottom: 15px; }
+
+main .integrantes {
+  color: #083b42;
+  padding: 50px; }
+  main .integrantes .integrantes__titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 30px; }
+    main .integrantes .integrantes__titulo h3 {
+      font-family: "Cinzel", serif; }
+  main .integrantes .integrantes__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 25px;
+    justify-items: center; }
+    main .integrantes .integrantes__box .integrantes__persona img {
+      width: 330px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px; }
+
+.servicios .servicios__titulo h1 {
+  text-align: center;
+  margin-top: 20px; }
+
+.servicios .servicios__container {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; }
+  .servicios .servicios__container .servicios__box {
+    width: 300px;
+    height: 250px;
+    background: #fff;
+    margin: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer; }
+    .servicios .servicios__container .servicios__box:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5); }
+    .servicios .servicios__container .servicios__box i {
+      font-size: 60px; }
+    .servicios .servicios__container .servicios__box h2 {
+      font-size: 14px;
+      margin-top: 20px; }
+
+.estructuras .estructuras__foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/estructuras.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .estructuras .estructuras__foto h1 {
+    color: white;
+    font-size: 40px; }
+
+.estructuras .estructuras__proyectos {
+  padding-left: 55px;
+  padding-bottom: 50px; }
+  .estructuras .estructuras__proyectos .estructuras__titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px; }
+  .estructuras .estructuras__proyectos .estructuras__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 30px;
+    justify-items: center; }
+    .estructuras .estructuras__proyectos .estructuras__box img {
+      width: 400px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px; }
+
+.form__container {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: white; }
+  .form__container form {
+    width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px; }
+    .form__container form .form__titulo {
+      text-align: center;
+      font-size: 40px; }
+    .form__container form input, .form__container form textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px; }
+    .form__container form textarea {
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%; }
 
 footer {
   background-color: black; }

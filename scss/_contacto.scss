@@ -1,0 +1,28 @@
+.form__container{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: rgb(255, 255, 255);
+    form{
+        width: 600px;
+        margin: auto;
+        background: rgba(0, 0, 0,0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 10px;
+        .form__titulo{
+            text-align: center;
+            font-size: 40px;
+        }
+        input, textarea{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        textarea{
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+        }
+    }
+}
