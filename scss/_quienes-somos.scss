@@ -13,7 +13,7 @@ main{
         
     }
     .integrantes{
-        color:  #083b42;
+        color:  $integrantesColor;
         padding: 50px;
         .integrantes__titulo{
             display: flex;
