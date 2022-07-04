@@ -41,6 +41,7 @@ h1, h2, .btn{
 
     
 }
+
 p, button, h3{
     font-family: 'Rubik', sans-serif;
     font-size: 1em;
@@ -76,13 +77,14 @@ p, button, h3{
 .somosOcassio{
     padding-top: 10px;
     padding-bottom: 100px;
-    
+}
+.somosOcassio__text{
+  padding-top: 50px;
 }
 .somosOcassio .row .team img{
     opacity: 0.9;
     width: 90%;
     border-radius: 0.2em;
-
 }
 
 /* Sección Ofrecemos */
@@ -149,27 +151,43 @@ p, button, h3{
   }
 
 /* SECCIÓN DE SERVICIOS */
-.foto-landing {
+.servicios{
+  background: #cbd1d2;
+}
+.servicios .servicios__titulo h1{
+  text-align: center;
+  margin-top: 20px;
+}
+.servicios__container{
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.servicios__box{
+  width: 300px;
+  height: 250px;
+  background: #fff;
+  margin: 1.5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   flex-direction: column;
-  height: 90vh;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../img/servicios-steel.jpg);
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  cursor: pointer;
 }
-.foto-landing h1 {
-  color: white;
-  font-size: 40px;
+.servicios__box:hover{
+  transform:scale(1.1);
+  box-shadow: 0px 0px 30px -15px rgba( 0, 0, 0, 0.5);
+}
+.servicios__box i{
+  font-size: 60px;
+}
+.servicios__box h2{
+  font-size: 14px;
+  margin-top: 20px;
+
 }
 /* SECCION PROYECTOS */
 .estructuras__foto {
