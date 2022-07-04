@@ -1,0 +1,33 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+header .navbar .container a {
+  font-size: 0.9em;
+  color: black; }
+  header .navbar .container a img {
+    width: 80px;
+    height: 80px; }
+
+header .container .row .col-md-5 {
+  padding: 4.2vmin 1vmin; }
+  header .container .row .col-md-5 img {
+    width: 100%; }
+
+header .container .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin; }
+  header .container .row .col-md-7 h1 {
+    font-size: 9vmin;
+    font-weight: bold;
+    padding: 0.1em 0em; }
+  header .container .row .col-md-7 p {
+    padding: 1vmin 5vmin; }
+
+footer {
+  background-color: black; }
+  footer li {
+    list-style: none; }
