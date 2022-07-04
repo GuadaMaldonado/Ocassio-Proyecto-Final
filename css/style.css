@@ -213,6 +213,6 @@ footer {
   footer li {
     list-style: none; }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .form__container form {
     width: 100%; } }
