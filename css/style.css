@@ -175,10 +175,11 @@ main .integrantes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 300px;
-  padding: 70px;
+  padding: 30px 70px 70px 70px;
   grid-gap: 20px; }
   .estructuras .estructuras__proyectos .estructuras__box .box__item {
-    position: relative; }
+    position: relative;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1); }
     .estructuras .estructuras__proyectos .estructuras__box .box__item .box__title {
       position: absolute;
       bottom: 0;
@@ -189,7 +190,8 @@ main .integrantes {
     .estructuras .estructuras__proyectos .estructuras__box .box__item .box__img {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      border-radius: 5px; }
   .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(2) {
     grid-column-start: span 2; }
   .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(5) {
