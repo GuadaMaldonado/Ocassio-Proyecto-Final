@@ -165,24 +165,35 @@ main .integrantes {
     color: white;
     font-size: 40px; }
 
-.estructuras .estructuras__proyectos {
-  padding: 0px 0px 50px 55px; }
-  .estructuras .estructuras__proyectos .estructuras__titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    padding: 30px 0px 10px; }
-  .estructuras .estructuras__proyectos .estructuras__box {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, auto));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 30px;
-    justify-items: center; }
-    .estructuras .estructuras__proyectos .estructuras__box img {
-      width: 400px;
-      height: 350px;
-      object-fit: cover;
-      border-radius: 10px; }
+.estructuras .estructuras__proyectos .estructuras__titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding: 30px 0px 10px; }
+
+.estructuras .estructuras__proyectos .estructuras__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 300px;
+  padding: 70px;
+  grid-gap: 20px; }
+  .estructuras .estructuras__proyectos .estructuras__box .box__item {
+    position: relative; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item .box__title {
+      position: absolute;
+      bottom: 0;
+      font-family: "Cinzel", serif;
+      font-weight: bold;
+      color: #083b42;
+      font-size: 17px; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item .box__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(2) {
+    grid-column-start: span 2; }
+  .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(5) {
+    grid-column-start: span 2; }
 
 .form__container {
   padding-top: 20px;
@@ -221,6 +232,38 @@ footer {
       grid-template-columns: repeat(auto-fit, minmax(250px, auto)); }
       main .integrantes .integrantes__box .integrantes__persona img {
         width: 250px; } }
+
+@media screen and (max-width: 1000px) {
+  .estructuras .estructuras__proyectos .estructuras__box {
+    grid-template-columns: repeat(4, 1fr); }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(1) {
+      grid-column-start: span 2; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(2) {
+      grid-column-start: span 2; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(3) {
+      grid-column-start: span 2; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(4) {
+      grid-column-start: span 2; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(5) {
+      grid-column-start: span 2; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(6) {
+      grid-column-start: span 2; } }
+
+@media screen and (max-width: 700px) {
+  .estructuras .estructuras__proyectos .estructuras__box {
+    grid-template-columns: repeat(1, 1fr); }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(1) {
+      grid-column-start: span 1; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(2) {
+      grid-column-start: span 1; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(3) {
+      grid-column-start: span 1; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(4) {
+      grid-column-start: span 1; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(5) {
+      grid-column-start: span 1; }
+    .estructuras .estructuras__proyectos .estructuras__box .box__item:nth-child(6) {
+      grid-column-start: span 1; } }
 
 @media screen and (max-width: 600px) {
   .form__container form {
