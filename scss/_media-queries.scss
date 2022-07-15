@@ -1,4 +1,19 @@
-
+@media screen and (max-width:450px) {
+  main{
+    .integrantes{
+      padding: 0;
+      .integrantes__box{
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+        .integrantes__persona{
+          img{
+           width: 250px;
+          }
+        }
+      }
+    }
+}
+  
+}
 // CONTACTO
 @media screen and (max-width: 600px) {
     .form__container{
